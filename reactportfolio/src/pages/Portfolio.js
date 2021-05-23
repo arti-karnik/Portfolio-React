@@ -25,14 +25,14 @@ var projects = [
 },
   {
       title: "Food Feed",
-      description: "FoodFeed is a web app for users that want to search for a place to eat whether it's local or in another city.",
+      description: "FoodFeed is a web app for users that want to search for a place to eat whether it's local or in another city. User is asked to share their location", 
       github: "https://github.com/arti-karnik/FoodFeed",
       url: "https://arti-karnik.github.io/FoodFeed/",
       image: "/images/icons/food-icon.png",
   },
   {
       title: "Plan My Day",
-      description: "A simple day planner application that will allow the user to add events in one hour time slots.",
+      description: "A simple day planner application that will allow the user to add events in one hour time slots.  User have option to select date and time with Day, Week or Month view.",
       github: "https://github.com/arti-karnik/PlayMyDay",
       url: "https://arti-karnik.github.io/PlayMyDay/",
       image: "/images/icons/plan-icon.png",
@@ -46,14 +46,14 @@ var projects = [
   },
     {
         title: "What's my Weather!",
-        description: "Application to get current and 5-day weather forecast for given city name. Searches get saved locally.",
+        description: "Application to get current and 5-day weather forecast for given city name. Current & forecasted temperature details displayed.",
         github: "https://github.com/arti-karnik/WhatsMyWeather",
         url: "https://arti-karnik.github.io/WhatsMyWeather/",
         image: "/images/icons/weather-icon.png",
     },
     {
       title: "Employee Viewer",
-      description: "An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.",
+      description: "An employee or manager would benefit greatly from being able to view data about other employees. Filter employees by name.",
       github: "https://github.com/arti-karnik/EmployeePage",
       url: "https://arti-karnik.github.io/EmployeePage/",
       image: "/images/icons/employee.png",
@@ -65,11 +65,22 @@ var projects = [
       url: "https://arcane-inlet-16342.herokuapp.com/",
       image: "/images/icons/blog.png",
     },
+    {
+      title: "Note Taker",
+      description: "Application to get current and 5-day weather forecast for given city name. Searches get saved locally.",
+      github: "https://github.com/arti-karnik/WhatsMyWeather",
+      url: "https://arti-karnik.github.io/WhatsMyWeather/",
+      image: "/images/icons/weather-icon.png",
+  },
 ]
 
 const images_Budget = [
   'images/screenshots/Budget1.png',
   'images/screenshots/Budget2.png',
+];
+const images_Food = [
+  'images/screenshots/Food1.png',
+  'images/screenshots/Food2.png',
 ];
 const images_Event = [
   'images/screenshots/Event1.png',
@@ -94,6 +105,16 @@ const images_Quiz = [
   'images/screenshots/Quiz1.png',
   'images/screenshots/Quiz2.png',
 ];
+const images_Weather = [
+  'images/screenshots/Weather.png',
+];
+
+const images_Blog = [
+  'images/screenshots/Quiz1.png',
+  'images/screenshots/Quiz2.png',
+];
+
+
 
 export default class LightboxExample extends Component {
   constructor(props) {
@@ -107,89 +128,297 @@ export default class LightboxExample extends Component {
       isOpenNote: false,
       isOpenQuiz: false,
       isOpenBudget: false,
-      isOpenDay: false
+      isOpenDay: false,
+      isOpenFood: false,
+      isOpenWeather: false
+
     };
   }
   render() {
-    const { photoIndex, isOpen, isOpenBudget, isOpenDay, isOpenEvent, isOpenNote, isOpenEmployee, isOpenQuiz } = this.state;
+    const { photoIndex, isOpen, isOpenBudget, isOpenDay, isOpenEvent, isOpenNote, isOpenEmployee, isOpenQuiz, isOpenFood, isOpenWeather } = this.state;
 
     return (
       <Container>
       <Row>
         <Col className="portfolio-item">
         <h5>{projects[0].title}</h5>
-                  <div className="item-wrap" >
-                      <img src={projects[0].image} className="item-img"/>
-                      <p> {projects[0].description}</p>
-                  </div>
-                  <a  href={projects[0].github}>Github  </a>
-                  <a href={projects[0].url}>Live url  </a>
-                  <a href="https://www.google.com/">Screenshots  </a>
-       </Col>
-        <Col className="portfolio-item"><h5>{projects[1].title}</h5>
-                  <div className="item-wrap" >
-                      <img src={projects[1].image} className="item-img"/>
-                      <p> {projects[1].description}</p>
-                  </div>
-                  <a  href={projects[1].github}>Github  </a>
-                  <a href={projects[1].url}>Live url  </a>
-                  <a href="https://www.google.com/">Screenshots  </a>
-       
-       </Col>
-        <Col className="portfolio-item"><h5>{projects[2].title}</h5>
-                  <div className="item-wrap" >
-                      <img src={projects[2].image} className="item-img"/>
-                      <p> {projects[2].description}</p>
-                  </div>
-                  <a  href={projects[2].github}>Github  </a>
-                  <a href={projects[2].url}>Live url  </a>
-                  <a href="https://www.google.com/">Screenshots  </a>
-       </Col>
+        <div>
+            <img src={projects[0].image} className="portfolio-icon"></img>
+        </div>
+            <div className="item-wrap1" >
+              <p> {projects[0].description}</p>
+              <div className="link">
+                <button className="portfolio-button">
+                  <a href={projects[0].github} target="_blank">Github</a>
+                </button>
+                <button className="portfolio-button">
+                 <a href={projects[0].url} target="_blank">Website  </a>
+                </button>
+                <button className="portfolio-button">
+                <a target="_blank" onClick={() => this.setState({ isOpenEvent: true })}>Images  </a>
+                </button>
+              </div>
+            </div>
+          </Col>
+          <Col className="portfolio-item">
+        <h5>{projects[1].title}</h5>
+        <div>
+            <img src={projects[1].image} className="portfolio-icon"></img>
+        </div>
+            <div className="item-wrap1" >
+              <p> {projects[1].description}</p>
+              <div className="link">
+                <button className="portfolio-button">
+                  <a href={projects[1].github} target="_blank">Github </a>
+                </button>
+                <button className="portfolio-button">
+                 <a href={projects[1].url} target="_blank">Website  </a>
+                </button>
+                <button className="portfolio-button">
+                <a onClick={() => this.setState({ isOpenFood: true })}>Images  </a>
+                </button>
+              </div>
+            </div>
+          </Col>
+        
+          <Col className="portfolio-item">
+        <h5>{projects[2].title}</h5>
+        <div>
+            <img src={projects[2].image} className="portfolio-icon"></img>
+        </div>
+            <div className="item-wrap1" >
+              <p> {projects[2].description}</p>
+              <div className="link">
+                <button className="portfolio-button">
+                  <a href={projects[2].github} target="_blank">Github </a>
+                </button>
+                <button className="portfolio-button">
+                 <a href={projects[2].url} target="_blank">Website  </a>
+                </button>
+                <button className="portfolio-button">
+                <a onClick={() => this.setState({ isOpenDay: true })}>Images  </a>
+                </button>
+              </div>
+            </div>
+          </Col>
+        
       </Row>
       <Row>
-        <Col className="portfolio-item">
+      <Col className="portfolio-item">
         <h5>{projects[3].title}</h5>
-                  <div className="item-wrap" >
-                      <img src={projects[3].image} className="item-img"/>
-                      <p> {projects[3].description}</p>
-                  </div>
-                  <a  href={projects[3].github}>Github  </a>
-                  <a href={projects[3].url}>Live url  </a>
-                  <a href="https://www.google.com/">Screenshots  </a>
-       </Col>
-        <Col className="portfolio-item"><h5>{projects[4].title}</h5>
-                  <div className="item-wrap" >
-                      <img src={projects[4].image} className="item-img"/>
-                      <p> {projects[4].description}</p>
-                  </div>
-                  <a  href={projects[4].github}>Github  </a>
-                  <a href={projects[4].url}>Live url  </a>
-                  <a href="https://www.google.com/">Screenshots  </a>
-       
-       </Col>
-        <Col className="portfolio-item"><h5>{projects[5].title}</h5>
-                  <div className="item-wrap" >
-                      <img src={projects[5].image} className="item-img"/>
-                      <p> {projects[5].description}</p>
-                  </div>
-                  <a  href={projects[5].github}>Github  </a>
-                  <a href={projects[5].url}>Live url  </a>
-                  <a href="https://www.google.com/">Screenshots  </a>
-       </Col>
+        <div>
+            <img src={projects[3].image} className="portfolio-icon"></img>
+        </div>
+            <div className="item-wrap1" >
+              <p> {projects[3].description}</p>
+              <div className="link">
+                <button className="portfolio-button">
+                  <a href={projects[3].github} target="_blank">Github </a>
+                </button>
+                <button className="portfolio-button">
+                 <a href={projects[3].url} target="_blank">Website  </a>
+                </button>
+                <button className="portfolio-button">
+                <a onClick={() => this.setState({ isOpenFood: true })}>Images  </a>
+                </button>
+              </div>
+            </div>
+          </Col>
+        
+          <Col className="portfolio-item">
+        <h5>{projects[4].title}</h5>
+        <div>
+            <img src={projects[4].image} className="portfolio-icon"></img>
+        </div>
+            <div className="item-wrap1" >
+              <p> {projects[4].description}</p>
+              <div className="link">
+                <button className="portfolio-button">
+                  <a href={projects[4].github}target="_blank" >Github </a>
+                </button>
+                <button className="portfolio-button">
+                 <a href={projects[4].url} target="_blank">Website  </a>
+                </button>
+                <button className="portfolio-button">
+                <a onClick={() => this.setState({ isOpenWeather: true })}>Images  </a>
+                </button>
+              </div>
+            </div>
+          </Col>
+        
+          <Col className="portfolio-item">
+        <h5>{projects[5].title}</h5>
+        <div>
+            <img src={projects[5].image} className="portfolio-icon"></img>
+        </div>
+            <div className="item-wrap1" >
+              <p> {projects[5].description}</p>
+              <div className="link">
+                <button className="portfolio-button">
+                  <a href={projects[5].github}target="_blank" >Github </a>
+                </button>
+                <button className="portfolio-button">
+                 <a href={projects[5].url} target="_blank">Website  </a>
+                </button>
+                <button className="portfolio-button">
+                <a onClick={() => this.setState({ isOpenEmployee: true })}>Images  </a>
+                </button>
+              </div>
+            </div>
+          </Col>
+        
       </Row>
+      {isOpenEvent && (
+          <Lightbox
+            mainSrc={images_Event[photoIndex]}
+            nextSrc={images_Event[(photoIndex + 1) % images_Event.length]}
+            prevSrc={images_Event[(photoIndex + images_Event.length - 1) % images_Event.length]}
+            onCloseRequest={() => this.setState({ isOpenEvent: false })}
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + images_Event.length - 1) % images_Event.length,
+              })
+            }
+            onMoveNextRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + 1) % images_Event.length,
+              })
+            }
+          />
+        )}
 
-      <Row>
-        <Col>
-        <h5>{projects[6].title}</h5>
-                  <div className="item-wrap" >
-                      <img src={projects[6].image} className="item-img"/>
-                      <p> {projects[6].description}</p>
-                  </div>
-                  <a  href={projects[6].github}>Github  </a>
-                  <a href={projects[6].url}>Live url  </a>
-                  <a href="https://www.google.com/">Screenshots  </a>
-       </Col>
-      </Row>
+{isOpenWeather && (
+          <Lightbox
+            mainSrc={images_Weather[photoIndex]}
+            nextSrc={images_Weather[(photoIndex + 1) % images_Weather.length]}
+            prevSrc={images_Weather[(photoIndex + images_Weather.length - 1) % images_Weather.length]}
+            onCloseRequest={() => this.setState({ isOpenWeather: false })}
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + images_Weather.length - 1) % images_Weather.length,
+              })
+            }
+            onMoveNextRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + 1) % images_Weather.length,
+              })
+            }
+          />
+        )}
+
+      {isOpenBudget && (
+          <Lightbox
+            mainSrc={images_Budget[photoIndex]}
+            nextSrc={images_Budget[(photoIndex + 1) % images_Budget.length]}
+            prevSrc={images_Budget[(photoIndex + images_Budget.length - 1) % images_Budget.length]}
+            onCloseRequest={() => this.setState({ isOpenBudget: false })}
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + images_Budget.length - 1) % images_Budget.length,
+              })
+            }
+            onMoveNextRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + 1) % images_Budget.length,
+              })
+            }
+          />
+        )}
+
+        {isOpenEmployee && (
+              <Lightbox
+                mainSrc={images_Employee[photoIndex]}
+                nextSrc={images_Employee[(photoIndex + 1) % images_Employee.length]}
+                prevSrc={images_Employee[(photoIndex + images_Employee.length - 1) % images_Employee.length]}
+                onCloseRequest={() => this.setState({ isOpenEmployee: false })}
+                onMovePrevRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + images_Employee.length - 1) % images_Employee.length,
+                  })
+                }
+                onMoveNextRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + 1) % images_Employee.length,
+                  })
+                }
+              />
+        )}
+
+        {isOpenFood && (
+              <Lightbox
+                mainSrc={images_Food[photoIndex]}
+                nextSrc={images_Food[(photoIndex + 1) % images_Food.length]}
+                prevSrc={images_Food[(photoIndex + images_Food.length - 1) % images_Food.length]}
+                onCloseRequest={() => this.setState({ isOpenFood: false })}
+                onMovePrevRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + images_Food.length - 1) % images_Food.length,
+                  })
+                }
+                onMoveNextRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + 1) % images_Food.length,
+                  })
+                }
+              />
+        )}
+
+      {isOpenNote && (
+              <Lightbox
+                mainSrc={images_Note[photoIndex]}
+                nextSrc={images_Note[(photoIndex + 1) % images_Note.length]}
+                prevSrc={images_Note[(photoIndex + images_Note.length - 1) % images_Note.length]}
+                onCloseRequest={() => this.setState({ isOpenNote: false })}
+                onMovePrevRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + images_Note.length - 1) % images_Note.length,
+                  })
+                }
+                onMoveNextRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + 1) % images_Note.length,
+                  })
+                }
+              />
+        )}
+
+        {isOpenDay && (
+              <Lightbox
+                mainSrc={images_Day[photoIndex]}
+                nextSrc={images_Day[(photoIndex + 1) % images_Day.length]}
+                prevSrc={images_Day[(photoIndex + images_Day.length - 1) % images_Day.length]}
+                onCloseRequest={() => this.setState({ isOpenDay: false })}
+                onMovePrevRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + images_Day.length - 1) % images_Day.length,
+                  })
+                }
+                onMoveNextRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + 1) % images_Day.length,
+                  })
+                }
+              />
+        )}
+
+          {isOpenQuiz && (
+              <Lightbox
+                mainSrc={images_Quiz[photoIndex]}
+                nextSrc={images_Quiz[(photoIndex + 1) % images_Quiz.length]}
+                prevSrc={images_Quiz[(photoIndex + images_Quiz.length - 1) % images_Quiz.length]}
+                onCloseRequest={() => this.setState({ isOpenQuiz: false })}
+                onMovePrevRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + images_Quiz.length - 1) % images_Quiz.length,
+                  })
+                }
+                onMoveNextRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + 1) % images_Quiz.length,
+                  })
+                }
+              />
+        )}
 
 
     </Container>
@@ -202,7 +431,7 @@ export default class LightboxExample extends Component {
                       <p> {projects[0].description}</p>
                   </div>
                   <a  href={projects[0].github}>Github  </a>
-                  <a href={projects[0].url}>Live url  </a>
+                  <a href={projects[0].url}>Website  </a>
                   <a href="https://www.google.com/">Screenshots  </a>
             </div>
             <div className="columns portfolio-item">
@@ -212,7 +441,7 @@ export default class LightboxExample extends Component {
                       <p> {projects[1].description}</p>
                   </div>
                   <a  href={projects[1].github}>Github  </a>
-                  <a href={projects[1].url}>Live url  </a>
+                  <a href={projects[1].url}>Website  </a>
                   <a href="https://www.google.com/">Screenshots  </a>
             </div>
             <div className="columns portfolio-item">
@@ -222,7 +451,7 @@ export default class LightboxExample extends Component {
                       <p> {projects[2].description}</p>
                   </div>
                   <a  href={projects[2].github}>Github  </a>
-                  <a href={projects[2].url}>Live url  </a>
+                  <a href={projects[2].url}>Website  </a>
                   <a href="https://www.google.com/">Screenshots  </a>
             </div>
             <div className="columns portfolio-item">
@@ -232,7 +461,7 @@ export default class LightboxExample extends Component {
                       <p> {projects[3].description}</p>
                   </div>
                   <a  href={projects[3].github}>Github  </a>
-                  <a href={projects[3].url}>Live url  </a>
+                  <a href={projects[3].url}>Website  </a>
                   <a href="https://www.google.com/">Screenshots  </a>
             </div>
             <div className="columns portfolio-item">
@@ -242,7 +471,7 @@ export default class LightboxExample extends Component {
                       <p> {projects[4].description}</p>
                   </div>
                   <a  href={projects[4].github}>Github  </a>
-                  <a href={projects[4].url}>Live url  </a>
+                  <a href={projects[4].url}>Website  </a>
                   <a href="https://www.google.com/">Screenshots  </a>
             </div>
             <div className="columns portfolio-item">
@@ -252,7 +481,7 @@ export default class LightboxExample extends Component {
                       <p> {projects[5].description}</p>
                   </div>
                   <a  href={projects[5].github}>Github  </a>
-                  <a href={projects[5].url}>Live url  </a>
+                  <a href={projects[5].url}>Website  </a>
                   <a href="https://www.google.com/">Screenshots  </a>
             </div>
             <div className="columns portfolio-item">
@@ -262,7 +491,7 @@ export default class LightboxExample extends Component {
                       <p> {projects[6].description}</p>
                   </div>
                   <a  href={projects[6].github}>Github  </a>
-                  <a href={projects[6].url}>Live url  </a>
+                  <a href={projects[6].url}>Website  </a>
                   <a href="https://www.google.com/">Screenshots  </a>
             </div>
                 
