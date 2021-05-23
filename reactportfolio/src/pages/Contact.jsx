@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ContactForm from '../components/contactform';
+
 export default class ContactUs extends Component {
   render() {
     return (
@@ -6,19 +8,14 @@ export default class ContactUs extends Component {
           <div className="row section-head">
             <div className="ten columns">
               <p className="lead">
-              Feel free to contact me for any work or suggestions below
+              Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions
               </p>
+              <div className="App">                 
+        <ContactForm />           
+    </div>
             </div>
           </div>
-          <div className="row">
-            <aside className="eigth columns footer-widgets">
-              <div className="widget">
-                <h4>Linked in :
-                  resumeData.linkedinId
-                </h4>
-              </div>
-            </aside>
-          </div>
+         
         </section>
         );
   }
