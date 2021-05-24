@@ -1,0 +1,80 @@
+/* ------------------------------------------------------------------ */
+/* c. About Section
+/* ------------------------------------------------------------------ */
+
+#about-me {
+    background: #efefef;
+    padding-top: 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 200%;
+    padding: 30px 40px;
+    margin-top: 20px;
+   border-width: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2px 5px 5px 5px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  width: 50em;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 5%;
+
+ }
+ 
+ #about-me a, #about-me a:visited  { 
+    color: blue;
+   }
+ #about-me a:hover, #about-me a:focus { color: #11ABB0; }
+ #about-me .row {
+     margin-left: 20px;
+     width: auto;
+ }
+ #about-me h2 {
+    font-family: cursive;
+    font-size: 30px;
+    color: black;
+    font-family: cursive;
+    margin-bottom: 12px;
+    margin-left: 40px;
+ }
+ #about-me .contact {
+    margin-top: 30px;
+ }
+ #about-me p {
+    font-size: 15px;
+    color: black;
+    width: 100%;
+    margin-left: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ #about-me .profile-pic {
+    position: relative;
+    border-radius: 100%;
+    margin: 20px;
+}
+ #about-me .download {
+    width: 58.33333%;
+    padding-top: 6px;
+ }
+ #about-me .main-col { padding-right: 5%; }
+ #about-me .download .button {
+    margin-top: 6px;
+    background: #444;
+ }
+ #about-me .download .button:hover {
+    background: #fff;
+    color: #2B2B2B;
+ }
+ #about-me .download .button i {
+    margin-right: 15px;
+    font-size: 20px;
+ }
+ #about-me .right-panel {
+     padding-right: 0px;
+     margin-right: 0px;
+ }
+ .circle-icon {
+   background: lightblue;
+   padding:5px;
+   border-radius: 50%;
+}

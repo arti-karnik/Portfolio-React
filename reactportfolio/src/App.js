@@ -1,15 +1,16 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Button, Row, Col } from 'react-bootstrap';
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar/Navbar";
 
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
-import Resume from "./pages/Resume";
+import Portfolio from "./pages/Portfolio/Portfolio";
+import Contact from "./pages/Contact/contact";
+import Resume from "./pages/Resume/Resume";
 import Footer from "./components/Footer";
+import About from "./pages/About/About";
 
 function App() {
   return (

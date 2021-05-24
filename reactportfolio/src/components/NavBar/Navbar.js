@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, withRouter } from "react-router-dom";
+import "./style.css";
 
 const Navbar = ({ history }) => {
   const [isOpen, setOpen] = useState(false);
@@ -31,7 +32,7 @@ const Navbar = ({ history }) => {
             </NavLink>
 
             <NavLink className="navbar-item" activeClassName="is-active" to="/contact" >
-              Contact US
+              Contact
             </NavLink>
 
             <NavLink className="navbar-item" activeClassName="is-active" to="/resume">
