@@ -18,8 +18,10 @@
     "react-bootstrap": "^1.6.0",
     "react-dom": "^16.13.1",
     "react-image-lightbox": "^5.1.1",
+    "react-native-snowflakes": "^1.0.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-snowfall": "^1.1.0",
     "reactstrap": "^5.0.0-alpha.4",
     "web-vitals": "^1.1.2"
   },
