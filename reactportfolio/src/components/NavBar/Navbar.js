@@ -6,7 +6,8 @@ const Navbar = ({ history }) => {
   const [isOpen, setOpen] = useState(false);
   
   return (
-    <nav  id="nav" className="navbar is-primary" role="navigation"  aria-label="main navigation" >
+    
+    <nav id="nav-wrap"  role="navigation"  aria-label="main navigation" >
 <div className="container">
         <div className="navbar-brand">
           <a  role="button" className="smoothscroll"  aria-label="menu"  aria-expanded="false"  onClick={() => setOpen(!isOpen)} >
@@ -16,28 +17,37 @@ const Navbar = ({ history }) => {
           </a>
         </div>
 
-        <div className={`navbar-menu ${isOpen && "is-active"}`} >
-          <div className="navbar-start">
-          <NavLink  className="navbar-item" activeClassName="is-active" to="/" >
+        <div className={`${isOpen && "is-active"}`} >
+          <div>
+            <ul id="nav" className="nav">
+              <li>
+              <NavLink  className="navbar-item" activeClassName="is-active" to="/" >
             Home
           </NavLink>
-
-            <NavLink className="navbar-item" activeClassName="is-active" to="/about">
+              </li>
+              <li className="smoothscroll">
+              <NavLink className="navbar-item" activeClassName="is-active" to="/about">
               About
             </NavLink>
-
-            <NavLink className="navbar-item" activeClassName="is-active"
+              </li>
+              <li>
+              <NavLink className="navbar-item" activeClassName="is-active"
               to="/portfolio" >
               Portfolio
             </NavLink>
-
-            <NavLink className="navbar-item" activeClassName="is-active" to="/contact" >
+              </li>
+              <li>
+              <NavLink className="navbar-item"  activeClassName="is-active" to="/contact" >
               Contact
             </NavLink>
-
-            <NavLink className="navbar-item" activeClassName="is-active" to="/resume">
+              </li>
+              <li>
+              <NavLink className="navbar-item" activeClassName="is-active" to="/resume">
               Resume
             </NavLink>
+              </li>
+
+            </ul>
           </div>
         </div>
       </div>

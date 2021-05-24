@@ -1,6 +1,5 @@
 import { Container } from '@material-ui/core';
 import React, { Component } from 'react';
-import ContactForm from '../../components/contactform';
 import "./style.css";
 import { Button, Row, Col } from 'react-bootstrap';
 

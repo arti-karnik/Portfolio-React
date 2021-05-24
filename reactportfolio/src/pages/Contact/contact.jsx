@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ContactForm from '../../components/contactform';
+import ContactForm from '../../components/contactform/contactform';
 import "./style.css";
 
 export default class ContactUs extends Component {

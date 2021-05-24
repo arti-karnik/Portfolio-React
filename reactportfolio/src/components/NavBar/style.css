@@ -5,16 +5,15 @@
     outline: none;
 }
 .navbar-item {
-  margin: 0;
-  padding: 20px;
   border: none;
   outline: none;
 }
 #nav{
     background-color: #482c66;
+    width: 100%;
+    margin-top: 0px;
 }
 
-/* nav-wrap */
 #nav-wrap {
   font: 12px 'opensans-bold', sans-serif;
   width: 100%;
@@ -25,6 +24,8 @@
   position: fixed;
   left: 0;
   top: 0;
+  background-color: #482c66;
+
 }
 .opaque { background-color: gray; }
 
@@ -33,7 +34,7 @@
 
 ul#nav {
   min-height: 48px;
-  width: auto;
+  width: 100%;
 
   /* center align the menu */
   text-align: center;
@@ -51,7 +52,7 @@ ul#nav li a {
 /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
 
   display: inline-block;
-  padding: 8px 13px;
+  padding: 0px 13px;
   line-height: 32px;
    text-decoration: none;
   text-align: left;
@@ -62,10 +63,14 @@ ul#nav li a {
    -o-transition: color .2s ease-in-out;
    -ms-transition: color .2s ease-in-out;
    transition: color .2s ease-in-out;
+   text-align: center;
 }
 
 ul#nav li a:active { background-color: red !important; }
-ul#nav li.current a { color: #876983; }
+ul#nav li.current a { 
+  color: #876983; 
+  background-color: teal;
+}
 
 .navbar-menu  {
     min-height: 48px;
@@ -74,8 +79,13 @@ ul#nav li.current a { color: #876983; }
     font-size: 18px;
     text-align: center;
  }
- .navbar-item .is-active {
-    background-color: red;
+.is-active {
+   border-radius: 20px;
+   border: 1px solid;
+  
+   color : white;
+   border-radius: 25px;
+   border: 2px solid #1e5294;
  }
  
 
