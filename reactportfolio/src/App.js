@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navbar from "./components/NavBar/Navbar";
 import Home from "./pages/Main/Home";
-import Portfolio from "./pages/Portfolio/Portfolio";
 import Contact from "./pages/Contact/contact";
 import Resume from "./pages/Resume/Resume";
 import Footer from "./components/Footer";
