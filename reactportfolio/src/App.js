@@ -33,7 +33,7 @@ function App() {
           <Route exact path="/">
           <Home />
           </Route>
-          <Route exact path="/PortfolioReact">
+          <Route exact path="/Portfolio-React">
             <Home />
           </Route>
           <Route path="/about">
