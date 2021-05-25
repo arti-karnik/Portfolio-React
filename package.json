@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/arti-karnik/Portfolio-React/issues"
   },
-  "homepage": "https://arti-karnik.github.io/Portfolio-React",
+  "homepage": "https://arti-karnik.github.io/PortfolioReact",
   "dependencies": {
     "gh-pages": "^3.2.0"
   }
