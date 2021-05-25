@@ -26,24 +26,24 @@ export default class About extends Component {
                 </Row>
                 <Row>
                 <i class="fab fa-linkedin-in"></i>
-                  <p className="address">
+                
                      <ul className="social">
-                     <li key="key11">
+                     <li key="key1">
                         <strong>Email:</strong> arti.karnik@gmail.com
                         <a href="google.com" target="_blank"><i className="fa fa-mail"></i></a>
                      </li>
-                     <li key="key11">
+                     <li key="key2">
                         <strong>Address:</strong> El Segundo, CA
                         <a href="google.com" target="_blank"><i className="fa fa-mail"></i></a>
                      </li>
-                     <li key="key11">
+                     <li key="key3">
                         <strong>Phone:</strong> 123-567-3332
                      </li>
-                     <li key="key11">
+                     <li key="key4">
                         <strong>Website:</strong>                             
                         <a href="https://arti-karnik.github.io/MyPortfolioPage/index.html"> Click here </a>
                      </li>
-                     <li key="key11">
+                     <li key="key5">
                      </li>
                      <li key="key-social" className="social">
                         <a href="google.com" target="_blank" ><i className="fa fa-linkedin fa-lg circle-icon"></i></a>
@@ -51,8 +51,6 @@ export default class About extends Component {
                         <a href="google.com" target="_blank"><i className="fa fa-github fa-lg circle-icon"></i></a>
                      </li>
                      </ul>
-       				</p>
-                  
                 </Row>
 
               

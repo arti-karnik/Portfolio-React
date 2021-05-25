@@ -4,9 +4,8 @@ import ReactDOM from 'react-dom'
 import Snowfall from 'react-snowfall'
 import Typer from '../../components/Typing/Typer'
 
-export default class About extends Component {
-  render() {
-    return (
+function Home() {
+  return (
       <React.Fragment>
       <header id="home">
          <div className="row banner">
@@ -49,6 +48,6 @@ export default class About extends Component {
       </React.Fragment>
 
      
-    )}
-  ;
-}
+    )};
+    export default Home;
+

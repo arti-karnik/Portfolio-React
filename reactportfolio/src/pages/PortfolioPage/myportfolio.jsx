@@ -289,7 +289,7 @@ export default class myportfolio extends Component {
                     <div id="share">
                     <Button id="learnmore" href={projects[0].github} target="_blank">Github</Button>
                     <Button id="learnmore" href={projects[0].url} target="_blank">Website</Button>
-                    <Button variant="primary" id="learnmore" onClick={() => this.setState({ isOpenEvent: true })} className="share-button"> 
+                    <Button  id="learnmore" onClick={() => this.setState({ isOpenEvent: true })} className="share-button"> 
                     Images
                     </Button>
                     </div>
@@ -303,7 +303,7 @@ export default class myportfolio extends Component {
                     <div id="share">
                     <Button id="learnmore" href={projects[1].github} target="_blank">Github</Button>
                     <Button id="learnmore" href={projects[1].github} target="_blank">Website</Button>
-                    <Button variant="primary" id="learnmore" onClick={() => this.setState({ isOpenFood: true })} className="share-button"> 
+                    <Button  id="learnmore" onClick={() => this.setState({ isOpenFood: true })} className="share-button"> 
                     Images
                     </Button>
                     </div>
@@ -320,7 +320,7 @@ export default class myportfolio extends Component {
                     <div id="share">
                     <Button id="learnmore" href={projects[2].github} target="_blank">Github</Button>
                     <Button id="learnmore" href={projects[2].url} target="_blank">Website</Button>
-                    <Button variant="primary" id="learnmore" onClick={() => this.setState({ isOpenDay: true })} className="share-button"> 
+                    <Button  id="learnmore" onClick={() => this.setState({ isOpenDay: true })} className="share-button"> 
                     Images
                     </Button>
                     </div>
@@ -334,7 +334,7 @@ export default class myportfolio extends Component {
                     <div id="share">
                     <Button id="learnmore" href={projects[3].github} target="_blank">Github</Button>
                     <Button id="learnmore" href={projects[3].url} target="_blank">Website</Button>
-                    <Button variant="primary" id="learnmore" onClick={() => this.setState({ isOpenQuiz: true })} className="share-button"> 
+                    <Button  id="learnmore" onClick={() => this.setState({ isOpenQuiz: true })} className="share-button"> 
                     Images
                     </Button>
                     </div>
@@ -354,7 +354,7 @@ export default class myportfolio extends Component {
                     <div id="share">
                     <Button id="learnmore" href={projects[4].github} target="_blank">Github</Button>
                     <Button id="learnmore" href={projects[4].url} target="_blank">Website</Button>
-                    <Button variant="primary" id="learnmore" onClick={() => this.setState({ isOpenWeather: true })} className="share-button"> 
+                    <Button  id="learnmore" onClick={() => this.setState({ isOpenWeather: true })} className="share-button"> 
                     Images
                     </Button>
                     </div>
@@ -368,7 +368,7 @@ export default class myportfolio extends Component {
                     <div id="share">
                     <Button id="learnmore" href={projects[5].github} target="_blank">Github</Button>
                     <Button id="learnmore" href={projects[5].url} target="_blank">Website</Button>
-                    <Button variant="primary" id="learnmore" onClick={() => this.setState({ isOpenEmployee: true })} className="share-button"> 
+                    <Button  id="learnmore" onClick={() => this.setState({ isOpenEmployee: true })} className="share-button"> 
                     Images
                     </Button>
                     </div>
