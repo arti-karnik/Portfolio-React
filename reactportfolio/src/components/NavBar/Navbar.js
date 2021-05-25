@@ -53,7 +53,7 @@ const Nav = ({ history }) => {
     <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
     <ul id="nav" className="nav">
     <li><a  className="smoothscroll" href="#home"> 
-          <NavLink  className="navbar-item" activeClassName="is-active" to="/Portfolio-React" >
+          <NavLink  className="navbar-item" activeClassName="is-active" to="/PortfolioReact" >
             Home
           </NavLink></a></li>
        <li><a className="smoothscroll" href="#about">
