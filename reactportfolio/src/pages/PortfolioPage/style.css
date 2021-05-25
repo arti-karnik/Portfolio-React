@@ -61,6 +61,7 @@ body {
   align-items: stretch;
   justify-content: space-between;
   background: linear-gradient(180deg, #2a3267, #1e282f 100%);
+  background: transparent;
 }
 
 .hero-body {
@@ -68,7 +69,6 @@ body {
   flex-grow: 1;
   flex-shrink: 0;
   padding: 3rem 0.5rem;
-
   @media screen and (min-width: 980px) {
     padding: 8rem 1.5rem;
   }
@@ -78,6 +78,7 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .row {
@@ -88,7 +89,7 @@ body {
 .column {
   display: flex;
   flex: 1 1 auto;
-  width: 60%;
+  width: 50%;
   height: 300px;
   margin-top: 40px;
   @media screen and (min-width: 980px) {
@@ -99,12 +100,11 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   background-color: #fff;
   height: 300px;
   margin-left: 10%;
   width: 90%;
-  
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
   will-change: transform;
@@ -165,6 +165,9 @@ body {
   font-size: 12px;
   margin-left: 10px;
   color: black;
+  @media screen and (min-width: 576px) {
+    margin-top: 20px;
+  }
 }
 #share {
   margin-left: auto;

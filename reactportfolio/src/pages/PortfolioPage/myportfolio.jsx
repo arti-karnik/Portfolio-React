@@ -94,7 +94,7 @@ function Particles({ children }) {
           zIndex: 1,
           left: 0,
           right: 0,
-          bottom: 100,
+          bottom: 90,
           top: 100
         }}
       />
@@ -183,7 +183,7 @@ const images_Blog = [
 var projects = [
   {
     title: "Event Maker",
-    description: "This application allows a host to schedule an event online , in-person or an announcement for a few different types of events: Potluck & Party.",
+    description: "This application allows a host to schedule an event online , in-person or an announcement for a few different types of events.",
     github: "https://github.com/arti-karnik/EventMaker",
     url: "https://serene-oasis-98788.herokuapp.com/",
     image: '/images/icons/invitation.png',
@@ -191,7 +191,7 @@ var projects = [
 },
   {
       title: "Food Feed",
-      description: "FoodFeed is a web app for users that want to search for a place to eat whether it's local or in another city. User is asked to share their location", 
+      description: "FoodFeed is a web app for users that want to search for a place to eat whether it's local or in another city.", 
       github: "https://github.com/arti-karnik/FoodFeed",
       url: "https://arti-karnik.github.io/FoodFeed/",
       image: "/images/icons/food-icon.png",
@@ -226,7 +226,7 @@ var projects = [
     },
     {
       title: "Employee Viewer",
-      description: "An employee or manager would benefit greatly from being able to view data about other employees. Filter employees by name.",
+      description: "An employee or manager would benefit greatly from being able to view data about other employees.",
       github: "https://github.com/arti-karnik/EmployeePage",
       url: "https://arti-karnik.github.io/EmployeePage/",
       image: "/images/icons/employee.png",
@@ -252,46 +252,6 @@ var projects = [
 
   },
 ]
-const cards = [
-  {
-    title: 'Build faster ⚡️',
-    description: 'Create a React web app in the fraction of the time using our library of themes and building blocks.',
-    image: 'https://6jlvz1j5q3.csb.app/undraw_collection.svg',
-    imageRatio: 784 / 1016
-  },
-  {
-    title: 'Tweak anything 👩‍🎨',
-    description: 'Create a React web app in the fraction of the time using our library of themes and building blocks.',
-    image: 'https://6jlvz1j5q3.csb.app/undraw_upload.svg',
-    imageRatio: 839 / 1133
-  },
-  {
-    title: 'Export your code 🚀',
-    description: 'Create a React web app in the fraction of the time using our library of themes and building blocks.',
-    image: 'https://6jlvz1j5q3.csb.app/undraw_static_assets.svg',
-    imageRatio: 730 / 1030
-  },
-  {
-    title: 'Export your code 🚀',
-    description: 'Create a React web app in the fraction of the time using our library of themes and building blocks.',
-    image: 'https://6jlvz1j5q3.csb.app/undraw_static_assets.svg',
-    imageRatio: 730 / 1030
-  },
-  {
-    title: 'Export your code 🚀',
-    description: 'Create a React web app in the fraction of the time using our library of themes and building blocks.',
-    image: 'https://6jlvz1j5q3.csb.app/undraw_static_assets.svg',
-    imageRatio: 730 / 1030
-  },
-  {
-    title: 'Export your code 🚀',
-    description: 'Create a React web app in the fraction of the time using our library of themes and building blocks.',
-    
-    image: 'https://6jlvz1j5q3.csb.app/undraw_static_assets.svg',
-    imageRatio: 730 / 1030
-  }
-];
-
 
 export default class myportfolio extends Component {
   constructor(props) {
@@ -317,11 +277,9 @@ export default class myportfolio extends Component {
       const { photoIndex, isOpen, isOpenBudget, isOpenDay, isOpenEvent, isOpenNote, isOpenEmployee, isOpenQuiz, isOpenFood, isOpenWeather } = this.state;
 
       return (
-    <div className="portfolio">
       <Particles>
         <Hero>
           <div className="container">
-            
             <div className="row">
                 <div className="column">
                   <Card>
@@ -338,7 +296,6 @@ export default class myportfolio extends Component {
                     </Card>
                   </div>
                   <div className="column">
-
                     <Card>
                     <div className="card-title">{projects[1].title}</div>
                     <Image ratio={projects[1].imageRatio} src={process.env.PUBLIC_URL + projects[1].image} />
@@ -352,6 +309,8 @@ export default class myportfolio extends Component {
                     </div>
                     </Card>
                   </div>
+                </div>
+                <div className="row">
                   <div className="column">
 
                     <Card>
@@ -367,10 +326,6 @@ export default class myportfolio extends Component {
                     </div>
                     </Card>
                 </div>
-            </div>
-            </div>
-
-          <div className="row">
                 <div className="column">
                   <Card>
                     <div className="card-title">{projects[3].title}</div>
@@ -385,6 +340,12 @@ export default class myportfolio extends Component {
                     </div>
                     </Card>
                   </div>
+               
+
+                  </div>
+           
+
+          <div className="row">
                   <div className="column">
                     <Card>
                     <div className="card-title">{projects[4].title}</div>
@@ -413,6 +374,7 @@ export default class myportfolio extends Component {
                     </div>
                     </Card>
                     </div>
+            </div>
             </div>
         </Hero>
         {isOpenEvent && (
@@ -568,7 +530,6 @@ export default class myportfolio extends Component {
 
 
       </Particles>
-    </div>
   );
 }};
 
