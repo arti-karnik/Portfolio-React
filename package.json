@@ -9,10 +9,6 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arti-karnik/Portfolio-React.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
