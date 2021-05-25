@@ -72,47 +72,6 @@ var projects = [
   },
 ]
 
-const images_Budget = [
-  'images/screenshots/Budget1.png',
-  'images/screenshots/Budget2.png',
-];
-const images_Food = [
-  'images/screenshots/Food1.png',
-  'images/screenshots/Food2.png',
-];
-const images_Event = [
-  'images/screenshots/Event1.png',
-  'images/screenshots/Event2.png',
-];
-const images_Day = [
-  'images/screenshots/Day1.png',
-  'images/screenshots/Day2.png',
-  'images/screenshots/Day3.png',
-  'images/screenshots/Day4.png',
-];
-const images_Employee = [
-  'images/screenshots/Employee.png',
-];
-const images_Note = [
-  'images/screenshots/Note1.png',
-  'images/screenshots/Note2.png',
-  'images/screenshots/Note3.png',
-
-];
-const images_Quiz = [
-  'images/screenshots/Quiz1.png',
-  'images/screenshots/Quiz2.png',
-];
-const images_Weather = [
-  'images/screenshots/Weather.png',
-];
-
-const images_Blog = [
-  'images/screenshots/Quiz1.png',
-  'images/screenshots/Quiz2.png',
-];
-
-
 
 export default class LightboxExample extends Component {
   constructor(props) {
@@ -147,7 +106,7 @@ export default class LightboxExample extends Component {
             </Row>
             <Row>
               <Col>
-              <img src={projects[0].image} className="portfolio-icon"></img>
+              <img src={process.env.PUBLIC_URL + projects[0].image} className="portfolio-icon"></img>
               </Col>
           </Row>
           <Row>
@@ -176,7 +135,7 @@ export default class LightboxExample extends Component {
             
             <Row>
               <Col>
-              <img src={projects[1].image} className="portfolio-icon"></img>
+              <img src={process.env.PUBLIC_URL + projects[1].image}  className="portfolio-icon"></img>
               </Col>
           </Row>
           <Row>
@@ -205,7 +164,7 @@ export default class LightboxExample extends Component {
             
             <Row>
               <Col>
-              <img src={projects[2].image} className="portfolio-icon"></img>
+              <img src={process.env.PUBLIC_URL + projects[2].image}  className="portfolio-icon"></img>
               </Col>
           </Row>
           <Row>
@@ -234,7 +193,7 @@ export default class LightboxExample extends Component {
             </Row>
             <Row>
               <Col>
-              <img src={projects[3].image} className="portfolio-icon"></img>
+              <img src={process.env.PUBLIC_URL + projects[3].image}  className="portfolio-icon"></img>
               </Col>
           </Row>
           <Row>
@@ -263,7 +222,7 @@ export default class LightboxExample extends Component {
             
             <Row>
               <Col>
-              <img src={projects[4].image} className="portfolio-icon"></img>
+              <img src={process.env.PUBLIC_URL + projects[4].image}  className="portfolio-icon"></img>
               </Col>
           </Row>
           <Row>
@@ -292,7 +251,7 @@ export default class LightboxExample extends Component {
             
             <Row>
               <Col>
-              <img src={projects[5].image} className="portfolio-icon"></img>
+              <img src={process.env.PUBLIC_URL + projects[5].image} className="portfolio-icon"></img>
               </Col>
           </Row>
           <Row>
@@ -309,162 +268,6 @@ export default class LightboxExample extends Component {
           </Button>
           </Row>
           </Col>
-          
-           
         </Row>
-     
-      {isOpenEvent && (
-          <Lightbox
-            mainSrc={images_Event[photoIndex]}
-            nextSrc={images_Event[(photoIndex + 1) % images_Event.length]}
-            prevSrc={images_Event[(photoIndex + images_Event.length - 1) % images_Event.length]}
-            onCloseRequest={() => this.setState({ isOpenEvent: false })}
-            onMovePrevRequest={() =>
-              this.setState({
-                photoIndex: (photoIndex + images_Event.length - 1) % images_Event.length,
-              })
-            }
-            onMoveNextRequest={() =>
-              this.setState({
-                photoIndex: (photoIndex + 1) % images_Event.length,
-              })
-            }
-          />
-        )}
-
-      {isOpenWeather && (
-          <Lightbox
-            mainSrc={images_Weather[photoIndex]}
-            nextSrc={images_Weather[(photoIndex + 1) % images_Weather.length]}
-            prevSrc={images_Weather[(photoIndex + images_Weather.length - 1) % images_Weather.length]}
-            onCloseRequest={() => this.setState({ isOpenWeather: false })}
-            onMovePrevRequest={() =>
-              this.setState({
-                photoIndex: (photoIndex + images_Weather.length - 1) % images_Weather.length,
-              })
-            }
-            onMoveNextRequest={() =>
-              this.setState({
-                photoIndex: (photoIndex + 1) % images_Weather.length,
-              })
-            }
-          />
-        )}
-
-      {isOpenBudget && (
-          <Lightbox
-            mainSrc={images_Budget[photoIndex]}
-            nextSrc={images_Budget[(photoIndex + 1) % images_Budget.length]}
-            prevSrc={images_Budget[(photoIndex + images_Budget.length - 1) % images_Budget.length]}
-            onCloseRequest={() => this.setState({ isOpenBudget: false })}
-            onMovePrevRequest={() =>
-              this.setState({
-                photoIndex: (photoIndex + images_Budget.length - 1) % images_Budget.length,
-              })
-            }
-            onMoveNextRequest={() =>
-              this.setState({
-                photoIndex: (photoIndex + 1) % images_Budget.length,
-              })
-            }
-          />
-        )}
-
-        {isOpenEmployee && (
-              <Lightbox
-                mainSrc={images_Employee[photoIndex]}
-                nextSrc={images_Employee[(photoIndex + 1) % images_Employee.length]}
-                prevSrc={images_Employee[(photoIndex + images_Employee.length - 1) % images_Employee.length]}
-                onCloseRequest={() => this.setState({ isOpenEmployee: false })}
-                onMovePrevRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + images_Employee.length - 1) % images_Employee.length,
-                  })
-                }
-                onMoveNextRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + 1) % images_Employee.length,
-                  })
-                }
-              />
-        )}
-
-        {isOpenFood && (
-              <Lightbox
-                mainSrc={images_Food[photoIndex]}
-                nextSrc={images_Food[(photoIndex + 1) % images_Food.length]}
-                prevSrc={images_Food[(photoIndex + images_Food.length - 1) % images_Food.length]}
-                onCloseRequest={() => this.setState({ isOpenFood: false })}
-                onMovePrevRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + images_Food.length - 1) % images_Food.length,
-                  })
-                }
-                onMoveNextRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + 1) % images_Food.length,
-                  })
-                }
-              />
-        )}
-
-      {isOpenNote && (
-              <Lightbox
-                mainSrc={images_Note[photoIndex]}
-                nextSrc={images_Note[(photoIndex + 1) % images_Note.length]}
-                prevSrc={images_Note[(photoIndex + images_Note.length - 1) % images_Note.length]}
-                onCloseRequest={() => this.setState({ isOpenNote: false })}
-                onMovePrevRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + images_Note.length - 1) % images_Note.length,
-                  })
-                }
-                onMoveNextRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + 1) % images_Note.length,
-                  })
-                }
-              />
-        )}
-
-        {isOpenDay && (
-              <Lightbox
-                mainSrc={images_Day[photoIndex]}
-                nextSrc={images_Day[(photoIndex + 1) % images_Day.length]}
-                prevSrc={images_Day[(photoIndex + images_Day.length - 1) % images_Day.length]}
-                onCloseRequest={() => this.setState({ isOpenDay: false })}
-                onMovePrevRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + images_Day.length - 1) % images_Day.length,
-                  })
-                }
-                onMoveNextRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + 1) % images_Day.length,
-                  })
-                }
-              />
-        )}
-
-          {isOpenQuiz && (
-              <Lightbox
-                mainSrc={images_Quiz[photoIndex]}
-                nextSrc={images_Quiz[(photoIndex + 1) % images_Quiz.length]}
-                prevSrc={images_Quiz[(photoIndex + images_Quiz.length - 1) % images_Quiz.length]}
-                onCloseRequest={() => this.setState({ isOpenQuiz: false })}
-                onMovePrevRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + images_Quiz.length - 1) % images_Quiz.length,
-                  })
-                }
-                onMoveNextRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + 1) % images_Quiz.length,
-                  })
-                }
-              />
-        )}
-              </Container>
-
-  
+        </Container>
     )}}

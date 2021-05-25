@@ -9,7 +9,7 @@ export default class About extends Component {
        <Container id="about-me">
           <Row>
              <Col sm={4}>
-             <img className="profile-pic"  src="images/profilepic.png" alt="" />
+             <img className="profile-pic" src={process.env.PUBLIC_URL + '/images/profilepic.png'} alt="11" />
             </Col>
              <Col sm={8}>
                 <Row>
@@ -45,8 +45,8 @@ export default class About extends Component {
                      </li>
                      <li key="key11">
                      </li>
-                     <li key="key11" className="social">
-                        <a href="google.com" target="_blank"><i className="fa fa-linkedin fa-lg circle-icon" style={{color: "black"}}></i></a>
+                     <li key="key-social" className="social">
+                        <a href="google.com" target="_blank" ><i className="fa fa-linkedin fa-lg circle-icon"></i></a>
                         <a href="google.com" target="_blank"><i className="fa fa-twitter fa-lg circle-icon"></i></a>
                         <a href="google.com" target="_blank"><i className="fa fa-github fa-lg circle-icon"></i></a>
                      </li>

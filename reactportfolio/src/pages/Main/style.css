@@ -41,6 +41,7 @@ header {
     width: 70%;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
  }
+ 
  header .banner-text h3 span,
  header .banner-text h3 a {
     color: #fff;
@@ -51,6 +52,7 @@ header {
     border-color: #2F2D2E;
     border-color: rgba(150, 150, 150, .1);
  }
+ 
  
  /* header social links */
  header .social {
@@ -94,4 +96,11 @@ header {
    background: lightblue;
    padding:5px;
    border-radius: 50%;
+}
+#cursor {
+   font: 18px/1.9em 'librebaskerville-regular', serif;
+   color: white;
+   margin: 0 auto;
+   width: 70%;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
 }

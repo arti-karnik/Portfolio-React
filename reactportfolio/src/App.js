@@ -7,7 +7,7 @@ import Contact from "./pages/Contact/contact";
 import Resume from "./pages/Resume/Resume";
 import Footer from "./components/Footer";
 import About from "./pages/About/About";
-import Snowfall from 'react-snowfall'
+import Projects from "./pages/PortfolioPage/myportfolio";
 
 function App() {
   return (
@@ -16,16 +16,16 @@ function App() {
       <div className="main"> 
         <Switch>
           <Route exact path="/">
-            <Home />
+          <Home />
           </Route>
-          <Route exact path="/*">
+          <Route exact path="/Portfolio-React">
             <Home />
           </Route>
           <Route path="/about">
             <About />
           </Route>
           <Route path="/portfolio">
-            <Portfolio />
+            <Projects />
           </Route>
           <Route path="/contact">
             <Contact />

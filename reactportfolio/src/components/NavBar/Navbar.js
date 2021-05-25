@@ -1,22 +1,18 @@
 import React, { useState } from "react";
-import { NavLink, withRouter } from "react-router-dom";
+import { NavLink, withRouter, Link } from "react-router-dom";
 import "./style.css";
 
-const Navbar = ({ history }) => {
+const Nav = ({ history }) => {
   const [isOpen, setOpen] = useState(false);
   
   return (
-    
-    <nav id="nav-wrap"  role="navigation"  aria-label="main navigation" >
-<div className="container">
-        <div className="navbar-brand">
-          <a  role="button" className="smoothscroll"  aria-label="menu"  aria-expanded="false"  onClick={() => setOpen(!isOpen)} >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
+    /*
+    <nav id="nav-wrap">
+    <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+    <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+   
 
+<div className="container">
         <div className={`${isOpen && "is-active"}`} >
           <div>
             <ul id="nav" className="nav">
@@ -46,13 +42,41 @@ const Navbar = ({ history }) => {
               Resume
             </NavLink>
               </li>
-
             </ul>
           </div>
         </div>
       </div>
     </nav>
+     */
+    <nav id="nav-wrap">
+    <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+    <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+    <ul id="nav" className="nav">
+    <li><a  className="smoothscroll" href="#home"> 
+          <NavLink  className="navbar-item" activeClassName="is-active" to="/Portfolio-React" >
+            Home
+          </NavLink></a></li>
+       <li><a className="smoothscroll" href="#about">
+       <NavLink  className="navbar-item" activeClassName="is-active" to="/about" >
+            Aboutus
+          </NavLink>
+          </a></li>
+     <li><a className="smoothscroll" href="#resume"> <NavLink  className="navbar-item" activeClassName="is-active" to="/resume" >
+            Resume
+          </NavLink></a></li>
+       <li><a  className="smoothscroll" href="#portfolio"> 
+          <NavLink  className="navbar-item" activeClassName="is-active" to="/portfolio" >
+            Portfolio
+          </NavLink></a></li>
+         
+
+       <li><a className="smoothscroll" href="#contact"> <NavLink  className="navbar-item" activeClassName="is-active" to="/contact" >
+            Contact
+          </NavLink></a></li>
+    </ul>
+ </nav>
+   
   );
 };
 
-export default withRouter(Navbar);
+export default withRouter(Nav);

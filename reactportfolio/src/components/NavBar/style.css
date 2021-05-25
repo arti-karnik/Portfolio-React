@@ -3,19 +3,20 @@
     padding: 0;
     border: none;
     outline: none;
+    margin-top: 3px;
 }
 .navbar-item {
   border: none;
   outline: none;
+  
 }
 #nav{
-    background-color: #482c66;
     width: 100%;
     margin-top: 0px;
 }
 
 #nav-wrap {
-  font: 12px 'opensans-bold', sans-serif;
+  font: 13px 'opensans-bold', sans-serif;
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -24,7 +25,8 @@
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #482c66;
+  background-color: teal;
+  
 
 }
 .opaque { background-color: gray; }
@@ -65,13 +67,13 @@ ul#nav li a {
    transition: color .2s ease-in-out;
    text-align: center;
 }
-
-ul#nav li a:active { background-color: red !important; }
-ul#nav li.current a { 
-  color: #876983; 
-  background-color: teal;
+.is-active {
+  background-color: rgb(113, 80, 19);
+  border-radius: 10px;
+  color: black;
+  border-radius: 10px;
+  color: black;
 }
-
 .navbar-menu  {
     min-height: 48px;
     width: auto;
@@ -90,3 +92,36 @@ ul#nav li.current a {
  
 
 
+ li{
+  margin: 10px;
+}
+
+.navbar{
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;  
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;  
+}
+
+.navbar{
+  background-color:grey;
+  border-color:grey;
+}
+.navbar .nav-pills >li >a {
+    color: black;
+ }
+   .navbar .nav-pills > li > a:hover {
+     background-color: gold;
+     color: black;
+ }
+
+.navbar .nav-pills .active {
+   background-color: gold;
+   color:Black ;
+   font-weight:bold;
+}
+
+
+h2{
+  color:goldenrod;
+}
