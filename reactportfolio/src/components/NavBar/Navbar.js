@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-import { NavLink, withRouter, Link } from "react-router-dom";
+import React from "react";
+import { NavLink, withRouter } from "react-router-dom";
 import "./style.css";
 
-const Nav = ({ history }) => {
-  const [isOpen, setOpen] = useState(false);
-  
+const Nav = () => {  
   return (
     /*
     <nav id="nav-wrap">
@@ -52,27 +50,29 @@ const Nav = ({ history }) => {
     <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
     <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
     <ul id="nav" className="nav">
-    <li><a  className="smoothscroll" href="#home"> 
+    <li>
           <NavLink  className="navbar-item" activeClassName="is-active" to="/Portfolio-React" >
             Home
-          </NavLink></a></li>
-       <li><a className="smoothscroll" href="#about">
+          </NavLink>
+      </li>
+       <li>
        <NavLink  className="navbar-item" activeClassName="is-active" to="/about" >
             Aboutus
           </NavLink>
-          </a></li>
-     <li><a className="smoothscroll" href="#resume"> <NavLink  className="navbar-item" activeClassName="is-active" to="/resume" >
+      </li>
+     <li>
+      <NavLink  className="navbar-item" activeClassName="is-active" to="/resume" >
             Resume
-          </NavLink></a></li>
-       <li><a  className="smoothscroll" href="#portfolio"> 
+          </NavLink></li>
+       <li>
           <NavLink  className="navbar-item" activeClassName="is-active" to="/portfolio" >
             Portfolio
-          </NavLink></a></li>
+          </NavLink></li>
          
 
-       <li><a className="smoothscroll" href="#contact"> <NavLink  className="navbar-item" activeClassName="is-active" to="/contact" >
+       <li> <NavLink  className="navbar-item" activeClassName="is-active" to="/contact" >
             Contact
-          </NavLink></a></li>
+          </NavLink></li>
     </ul>
  </nav>
    

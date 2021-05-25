@@ -2,13 +2,11 @@ import React, { useState, useRef, Component } from 'react';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 
-import ReactDOM from 'react-dom';
 import { useSpring, animated } from 'react-spring';
 import ReactParticles from 'react-particles-js';
 import particlesConfig from './particles-config.js';
 import "./style.css";
 import { Button } from '@material-ui/core';
-import Screenshot from '../../components/Screenshot/Screenshot'
 const images_Event = [
   '/images/screenshots/Event1.png',
   '/images/screenshots/Event2.png',
@@ -122,7 +120,7 @@ function Image({ ratio, src }) {
           }}
         >
           <div className="ratio-inner">
-            <img src={src} />
+            <img src={src} alt="image"/>
           </div>
         </div>
       </div>
@@ -259,7 +257,6 @@ export default class myportfolio extends Component {
 
     this.state = {
       photoIndex: 0,
-      isOpen: false,
       isOpenEvent: false,
       isOpenEmployee: false,
       isOpenNote: false,

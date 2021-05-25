@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./style.css";
-import { Button, Row, Col, Container } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 
 export default  class Resume extends Component {
   render() {

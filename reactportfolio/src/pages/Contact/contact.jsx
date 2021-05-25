@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ContactForm from '../../components/contactform/contactform';
 import "./style.css";
 
-export default class ContactUs extends Component {
+export default class contact extends Component {
   render() {
     return (
       <section className="container" id="contact">

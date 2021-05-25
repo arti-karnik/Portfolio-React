@@ -1,7 +1,7 @@
 import { Container } from '@material-ui/core';
 import React, { Component } from 'react';
 import "./style.css";
-import { Button, Row, Col } from 'react-bootstrap';
+import {  Row, Col } from 'react-bootstrap';
 
 export default class About extends Component {
   render() {

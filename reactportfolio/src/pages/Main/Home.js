@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./style.css";
-import ReactDOM from 'react-dom'
 import Snowfall from 'react-snowfall'
 import Typer from '../../components/Typing/Typer'
 
