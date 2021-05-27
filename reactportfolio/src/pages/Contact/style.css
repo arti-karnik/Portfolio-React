@@ -2,42 +2,43 @@
 /* h. Contact Section
 /* ------------------------------------------------------------------ */
 
-#contact {
-   background: #191919;
-   padding-top: 10px;
-   padding-bottom: 102px;
+#contact-form {
    color: #636363;
    background: #efefef;
-   width: 100%;
    padding: 30px 40px;
   border: 1px solid black;
   box-shadow: rgba(0, 0, 0, 0.15) 2px 5px 5px 5px;
   border-radius: 20px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
-  width: 50em;
+  width: 50%;
   font-weight: 500;
    font-family: 'Raleway', sans-serif;
    margin-top: 60px;
-   height: 90%;
    margin-left: auto;
    margin-right: auto;
-
+   height: 90%;
  }
- #contact .section-head { margin-bottom: 42px; }
+ #contact-form .section-head { margin-bottom: 42px; }
  
- #contact a, #contact a:visited  { color: #11ABB0; }
- #contact a:hover, #contact a:focus { color: red; }
+ #contact-form a, #contact a:visited  { color: #11ABB0; }
+ #contact-form a:hover, #contact a:focus { color: red; }
  
- #contact h1 {
+ #contact-form .form-group {
+    margin: 10px;
+ }
+ #contact-form .form-control{
+   height: 60px;
+}
+ #contact-form h1 {
     font: 18px/24px 'opensans-bold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: black;
     margin-bottom: 6px;
  }
- #contact h1 span { display: none; }
- #contact h1:before {
+ #contact-form h1 span { display: none; }
+ #contact-form h1:before {
     font-family: 'FontAwesome';
     content: "\f0e0";
      padding-right: 10px;
@@ -48,15 +49,18 @@
     color: black;
  }
  
- #contact h4 {
+ #contact-form h4 {
     font: 16px/24px 'opensans-bold', sans-serif;
     color: black;
     margin-bottom: 6px;
  }
- #contact p.lead {
+ #contact-form p.lead {
     font: 16px 'opensans-light', sans-serif;
     color: black;
-    width: 100%;
+   
+ }
+ #contact-form .input-form {
+      background-color: white;
  }
  
  
@@ -68,9 +72,10 @@
     color: black;
      display: inline-block;
      float: left;
-    width: 26%;
+    
  }
- #contact input,
+
+ /*#contact input,
  #contact textarea,
  #contact select {
     padding: 18px 10px;
@@ -88,46 +93,20 @@
  #contact select:focus {
      color: black;
      background-color: #11ABB0;
- }
- #contact button.submit {
-     text-transform: uppercase;
-     letter-spacing: 3px;
-     color: black;
-    background: #0D0D0D;
-     border: none;
-    cursor: pointer;
-    height: auto;
-    display: inline-block;
-     border-radius: 3px;
-    
-    margin-left: auto;
-    margin-right: auto;
- }
- #contact button.submit:hover {
-     color: #0D0D0D;
-     background: black;
- }
- #contact span.required {
-     color: #11ABB0;
-     font-size: 13px;
- }
- #message-warning, #message-success {
-    display: none;
-     background: #0F0F0F;
-     padding: 24px 15px;
-     margin-bottom: 10px;
-    width: 65%;
-    margin-left: 26%;
- }
+ }*/
+ 
  #submit {
-   background-color:  #096482;
-   border-radius: 20px;
-   border: 1px solid black;
-   font-size: 12px;
-   margin-left: 10px;
-   color: white;
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   @media screen and (min-width: 576px) {
-     margin-top: 20px;
-   }
+  
+      background-color:  #096482;
+      border-radius: 20px;
+      border: 1px solid black;
+      font-size: 12px;
+      margin-left: 10px;
+      color: white;
+      padding: 15px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      @media screen and (min-width: 576px) {
+        margin-top: 20px;
+      }
+
  }

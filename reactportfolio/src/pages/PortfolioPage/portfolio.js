@@ -6,6 +6,8 @@ import { Container } from '@material-ui/core';
 import { useSpring, animated } from 'react-spring';
 import ReactParticles from 'react-particles-js';
 import particlesConfig from './particles-config.js';
+import Particles from '../../components/Particles/Particles';
+
 import "./style.css";
 import {  Row, Col } from 'react-bootstrap';
 import Card from '../../components/Project/Project'
@@ -77,7 +79,7 @@ function Card({ children }) {
     </animated.div>
   );
 }*/
-
+/*
 function Particles({ children }) {
   return (
     <div style={{ position: 'relative' }}>
@@ -89,13 +91,13 @@ function Particles({ children }) {
           left: 0,
           right: 0,
           bottom: 90,
-          top: 100
+          top: 100,
         }}
       />
       {children && <div style={{ position: 'relative' }}>{children}</div>}
     </div>
   );
-}
+}*/
 
 function Hero({ children }) {
   return (
@@ -260,7 +262,7 @@ export default class myportfolio extends Component {
 
       return (
         
-         <Particles id="particles">
+         <Particles>
         <Container>
             <Row className="row">
                 <Col className="column">

@@ -9,14 +9,12 @@ body {
    font-family: 'avenir next', avenir, -apple-system, BlinkMacSystemFont,
      'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
      sans-serif;
-   background-color: #474747;
  }
  .main {
    
  }
 
 #about-me {
-   background: #191919;
    padding-top: 10px;
    padding-bottom: 102px;
    color: #636363;
@@ -87,6 +85,13 @@ body {
  #about-me .right-panel {
      padding-right: 0px;
      margin-right: 0px;
+ }
+ body {
+   display: flex;
+   flex-direction: column;
+   height: 90%;
+   background-color:#0b5182;
+ 
  }
  .circle-icon {
    background: lightblue;

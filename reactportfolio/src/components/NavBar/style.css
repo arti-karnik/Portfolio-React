@@ -22,6 +22,7 @@
   border-radius: 10px;
   color: rebeccapurple;
   background-color: orange;
+
 }
 #nav{
     width: 100%;
@@ -39,7 +40,7 @@
   left: 0;
   top: 0;
   text-align: center;
-  background-color:teal;
+  background-color:rgb(20, 20, 26);
 }
 .opaque { background-color: gray; }
 
@@ -73,7 +74,7 @@ ul#nav li a {
   border-radius: 10px;
   color: black;
   border-radius: 10px;
-  background-color: #71501A;
+  background-color: #1d5291;
 
 }
 .navbar-menu  {
@@ -96,13 +97,14 @@ border-bottom-right-radius: 10px;
 
 .navbar{
   border-color:grey;
-  background-color: teal;
+  background-color: transparent;
 }
 .navbar .nav-pills >li >a {
     color: black;
  }
    .navbar .nav-pills > li > a:hover {
      background-color: gold;
+     background-color: red;
      color: black;
      bottom: 10px;
      opacity: 1;

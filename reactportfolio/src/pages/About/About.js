@@ -2,10 +2,12 @@ import { Container } from '@material-ui/core';
 import React, { Component } from 'react';
 import "./style.css";
 import {  Row, Col } from 'react-bootstrap';
+import Particles from '../../components/Particles/Particles';
 
 export default class About extends Component {
   render() {
     return (
+       <Particles>
        <Container id="about-me">
           <Row>
              <Col sm={4}>
@@ -62,7 +64,7 @@ export default class About extends Component {
             </Col>
           </Row>
        </Container>
-     
+       </Particles>
     );
   }
 }

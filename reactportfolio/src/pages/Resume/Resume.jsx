@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import "./style.css";
 import { Row, Col, Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
+import Particles from '../../components/Particles/Particles';
 
 export default  class Resume extends Component {
   render() {
     return (
+      <Particles>
     <Container id="resume">
         <Row>
             <Col>
@@ -99,6 +101,7 @@ export default  class Resume extends Component {
           </Col>
        </Row>
       </Container>
-      );
+     </Particles> 
+     );
   }
 }

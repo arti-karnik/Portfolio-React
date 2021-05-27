@@ -456,7 +456,7 @@ img.pull-right { margin: 12px 0px 0px 18px; }
 img.pull-left { margin: 12px 18px 0px 0px; }
 
 /*  6. Buttons  --------------------------------------------------------- */
-
+/*
 .button,
 .button:visited,
 button,
@@ -486,15 +486,7 @@ input[type="button"] {
    -khtml-border-radius: 3px;
    border-radius: 3px;
 }
-/*
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-   background: #3d4145;
-   color: #fff;
-}*/
+
 
 .button:active,
 button:active,
@@ -516,16 +508,15 @@ input[type="button"].full-width {
 	text-align: center;
 }
 
-/* Fix for odd Mozilla border & padding issues */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
-
+*/
 
 /*  7. Forms  --------------------------------------------------------- */
-
+/*
 form { margin-bottom: 24px; }
 fieldset { margin-bottom: 24px; }
 
@@ -540,8 +531,7 @@ select {
    border: 0;
    outline: none;
    vertical-align: middle;
-   min-width: 225px;
-	max-width: 100%;
+  
    font-size: 15px;
    line-height: 24px;
 	color: #647373;
@@ -556,7 +546,7 @@ textarea:focus {
 	background-color: #3d4145;
 }
 
-textarea { min-height: 220px; }
+
 
 label,
 legend {
@@ -578,7 +568,7 @@ input[type="radio"] {
 }
 
 input[type="checkbox"] { display: inline; }
-
+*/
 /* ------------------------------------------------------------------ */
 /* d. Grid
 ---------------------------------------------------------------------

@@ -11,18 +11,21 @@ body {
     'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
     sans-serif;
   color: #374047;
+  background-color: transparent;
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 90%;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  height: 70%;
+  height: 90%;
+  background-color:#0b5182;
+
 }
 
 .main {
@@ -30,12 +33,10 @@ body {
   flex-direction: column;
   flex: 1 0 auto;
   width: 100%;
-  border: 1px solid black;
-  box-shadow: rgba(0, 0, 0, 0.15) 2px 5px 5px 5px;
-  border-radius: 20px;
   color: hsl(206, 17%, 28%);
   margin-left: auto;
   margin-right: auto;
+  background-color:#0b5182;
 }
 
 .info {
@@ -65,7 +66,6 @@ body {
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  background: linear-gradient(180deg, #2a3267, #1e282f 100%);
 }
 
 .hero-body {
@@ -81,7 +81,6 @@ body {
 .container {
   width: 50em;
   margin: 0 auto;
-  background: orange;
   border: 1px solid black;
   border-radius: 20px;
   border: 1px solid black;
@@ -121,7 +120,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background-color: #fff;
   height: 280px;
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
@@ -198,18 +196,17 @@ body {
   margin-right: auto;
 }
 
-#particles {
-}
 .container {
-   color: #636363;
-   background: #efefef;
+  /* color: #636363;
   border: 1px solid black;
   box-shadow: rgba(0, 0, 0, 0.15) 2px 5px 5px 5px;
   border-radius: 20px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
-  width: 50em;
+  width: 50%;
   font-weight: 500;
    font-family: 'Raleway', sans-serif;
    margin-top: 60px;
+   margin-left: auto;
+   margin-right: auto;*/
 }
