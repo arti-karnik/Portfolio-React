@@ -1,102 +1,117 @@
 /* ------------------------------------------------------------------ */
+
+
 /* c. About Section
 /* ------------------------------------------------------------------ */
 
 body {
-   height: 100%;
-   padding: 0;
-   margin: 0;
-   font-family: 'avenir next', avenir, -apple-system, BlinkMacSystemFont,
-     'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
-     sans-serif;
- }
- .main {
-   
- }
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'avenir next', avenir, -apple-system, BlinkMacSystemFont, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+}
 
 #about-me {
-   padding-top: 10px;
-   padding-bottom: 102px;
-   color: #636363;
-   background: #efefef;
-   width: 100%;
-   padding: 30px 40px;
-  border: 1px solid black;
-  box-shadow: rgba(0, 0, 0, 0.15) 2px 5px 5px 5px;
-  border-radius: 20px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
-  width: 50em;
-  font-weight: 500;
-   font-family: 'Raleway', sans-serif;
-   margin-top: 60px;
-   height: 90%;
+    padding-top: 10px;
+    padding-bottom: 102px;
+    color: #636363;
+    background: #efefef;
+    width: 100%;
+    padding: 30px 40px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 5px 5px 5px;
+    border-radius: 20px;
+    color: hsl(206, 17%, 28%);
+    font-size: 18px;
+    width: 50em;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 60px;
+    height: 90%;
+}
 
- }
- 
- #about-me a, #about-me a:visited  { 
+#about-me a,
+#about-me a:visited {
     color: blue;
-   }
- #about-me a:hover, #about-me a:focus { color: #11ABB0; }
- #about-me .row {
-     margin-left: 20px;
-     width: auto;
- }
- #about-me h2 {
+}
+
+#about-me a:hover,
+#about-me a:focus {
+    color: #11ABB0;
+}
+
+#about-me .row {
+    margin-left: 20px;
+    width: auto;
+}
+
+#about-me h2 {
     font-family: cursive;
     font-size: 30px;
     color: black;
     font-family: cursive;
     margin-bottom: 12px;
     margin-left: 40px;
- }
- #about-me .contact {
+}
+
+#about-me .contact {
     margin-top: 30px;
- }
- #about-me p {
+}
+
+#about-me p {
     font-size: 15px;
     color: black;
     width: 100%;
     margin-left: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
- }
- #about-me .profile-pic {
+}
+
+#about-me .profile-pic {
     position: relative;
     border-radius: 100%;
     margin: 20px;
 }
- #about-me .download {
+
+#about-me .download {
     width: 58.33333%;
     padding-top: 6px;
- }
- #about-me .main-col { padding-right: 5%; }
- #about-me .download .button {
+}
+
+#about-me .main-col {
+    padding-right: 5%;
+}
+
+#about-me .download .button {
     margin-top: 6px;
     background: #444;
- }
- #about-me .download .button:hover {
+}
+
+#about-me .download .button:hover {
     background: #fff;
     color: #2B2B2B;
- }
- #about-me .download .button i {
+}
+
+#about-me .download .button i {
     margin-right: 15px;
     font-size: 20px;
- }
- #about-me .right-panel {
-     padding-right: 0px;
-     margin-right: 0px;
- }
- body {
-   display: flex;
-   flex-direction: column;
-   height: 90%;
-   background-color:#0b5182;
- 
- }
- .circle-icon {
-   background: lightblue;
-   padding:5px;
-   border-radius: 50%;
-   color: black;
-   margin-left: 10px;
+}
+
+#about-me .right-panel {
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    background-color: #0b5182;
+}
+
+.circle-icon {
+    background: lightblue;
+    padding: 5px;
+    border-radius: 50%;
+    color: black;
+    margin-left: 10px;
 }
