@@ -1,34 +1,30 @@
 import React, { useState, useRef, Component } from 'react';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
+import { Container } from '@material-ui/core';
 
 import { useSpring, animated } from 'react-spring';
 import ReactParticles from 'react-particles-js';
 import particlesConfig from './particles-config.js';
 import "./style.css";
+import {  Row, Col } from 'react-bootstrap';
+import Card from '../../components/Project/Project'
 import { Button } from '@material-ui/core';
 const images_Event = [
   '/images/screenshots/Event1.png',
   '/images/screenshots/Event2.png',
 ];
 
+/*
 function Card({ children }) {
   // We add this ref to card element and use in onMouseMove event ...
   // ... to get element's offset and dimensions.
   const ref = useRef();
-
-  // Keep track of whether card is hovered so we can increment ...
-  // ... zIndex to ensure it shows up above other cards when animation causes overlap.
   const [isHovered, setHovered] = useState(false);
 
   const [animatedProps, setAnimatedProps] = useSpring(() => {
     return {
-      // Array containing [rotateX, rotateY, and scale] values.
-      // We store under a single key (xys) instead of separate keys ...
-      // ... so that we can use animatedProps.xys.interpolate() to ...
-      // ... easily generate the css transform value below.
       xys: [0, 0, 1],
-      // Setup physics
       config: { mass: 10, tension: 400, friction: 40, precision: 0.00001 }
     };
   });
@@ -80,7 +76,7 @@ function Card({ children }) {
       {children}
     </animated.div>
   );
-}
+}*/
 
 function Particles({ children }) {
   return (
@@ -128,17 +124,6 @@ function Image({ ratio, src }) {
   );
 }
 
-function Info() {
-  return (
-    <div className="info">
-      Springy cards from{' '}
-      <a target="_blank" href="https://bit.ly/382KSdo">
-        divjoy.com
-      </a>
-      <div className="notice">(best viewed at larger screen width)</div>
-    </div>
-  );
-}
 const images_Budget = [
   '/images/screenshots/Budget1.png',
   '/images/screenshots/Budget2.png',
@@ -274,11 +259,11 @@ export default class myportfolio extends Component {
       const { photoIndex, isOpen, isOpenBudget, isOpenDay, isOpenEvent, isOpenNote, isOpenEmployee, isOpenQuiz, isOpenFood, isOpenWeather } = this.state;
 
       return (
-      <Particles>
-        <Hero>
-          <div className="container">
-            <div className="row">
-                <div className="column">
+        
+         <Particles id="particles">
+        <Container>
+            <Row className="row">
+                <Col className="column">
                   <Card>
                     <div className="card-title">{projects[0].title}</div>
                     <Image ratio={projects[0].imageRatio} src={process.env.PUBLIC_URL + projects[0].image} />
@@ -291,28 +276,26 @@ export default class myportfolio extends Component {
                     </Button>
                     </div>
                     </Card>
-                  </div>
-                  <div className="column">
+                  </Col>
+                  
+                  <Col className="column">
                     <Card>
                     <div className="card-title">{projects[1].title}</div>
                     <Image ratio={projects[1].imageRatio} src={process.env.PUBLIC_URL + projects[1].image} />
                     <div className="card-body">{projects[1].description}</div>
                     <div id="share">
                     <Button id="learnmore" href={projects[1].github} target="_blank">Github</Button>
-                    <Button id="learnmore" href={projects[1].github} target="_blank">Website</Button>
+                    <Button id="learnmore" href={projects[1].url} target="_blank">Website</Button>
                     <Button  id="learnmore" onClick={() => this.setState({ isOpenFood: true })} className="share-button"> 
                     Images
                     </Button>
                     </div>
                     </Card>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="column">
-
+                  </Col>
+                  <Col className="column" >
                     <Card>
                     <div className="card-title">{projects[2].title}</div>
-                    <Image ratio={projects[2].imageRatio} src={process.env.PUBLIC_URL + projects[2].image} />
+                    <Image ratio={projects[2].imageRatio} src={process.env.PUBLIC_URL + projects[1].image} />
                     <div className="card-body">{projects[2].description}</div>
                     <div id="share">
                     <Button id="learnmore" href={projects[2].github} target="_blank">Github</Button>
@@ -322,11 +305,13 @@ export default class myportfolio extends Component {
                     </Button>
                     </div>
                     </Card>
-                </div>
-                <div className="column">
-                  <Card>
+                </Col>
+                </Row>
+                <Row className="row">
+                  <Col className="column">
+                    <Card>
                     <div className="card-title">{projects[3].title}</div>
-                    <Image ratio={projects[3].imageRatio} src={process.env.PUBLIC_URL + projects[3].image} />
+                    <Image ratio={projects[2].imageRatio} src={process.env.PUBLIC_URL + projects[3].image} />
                     <div className="card-body">{projects[3].description}</div>
                     <div id="share">
                     <Button id="learnmore" href={projects[3].github} target="_blank">Github</Button>
@@ -336,15 +321,9 @@ export default class myportfolio extends Component {
                     </Button>
                     </div>
                     </Card>
-                  </div>
-               
-
-                  </div>
-           
-
-          <div className="row">
-                  <div className="column">
-                    <Card>
+                  </Col>
+                  <Col className="column">
+                  <Card>
                     <div className="card-title">{projects[4].title}</div>
                     <Image ratio={projects[4].imageRatio} src={process.env.PUBLIC_URL + projects[4].image} />
                     <div className="card-body">{projects[4].description}</div>
@@ -356,8 +335,9 @@ export default class myportfolio extends Component {
                     </Button>
                     </div>
                     </Card>
-                  </div>
-                  <div className="column">
+                  </Col>
+               
+                  <Col className="column">
                     <Card>
                     <div className="card-title">{projects[5].title}</div>
                     <Image ratio={projects[5].imageRatio} src={process.env.PUBLIC_URL + projects[5].image} />
@@ -370,10 +350,10 @@ export default class myportfolio extends Component {
                     </Button>
                     </div>
                     </Card>
-                    </div>
-            </div>
-            </div>
-        </Hero>
+                  
+                  </Col>
+           
+                  </Row>
         {isOpenEvent && (
           <Lightbox
           mainSrc={process.env.PUBLIC_URL + images_Event[photoIndex]}
@@ -524,8 +504,7 @@ export default class myportfolio extends Component {
                 }
               />
         )}
-
-
+        </Container>
       </Particles>
   );
 }};

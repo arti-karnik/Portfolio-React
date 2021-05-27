@@ -22,7 +22,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 70%;
 }
 
 .main {
@@ -30,7 +30,12 @@ body {
   flex-direction: column;
   flex: 1 0 auto;
   width: 100%;
-  background-color: #1e282f;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.15) 2px 5px 5px 5px;
+  border-radius: 20px;
+  color: hsl(206, 17%, 28%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .info {
@@ -38,7 +43,7 @@ body {
   z-index: 1;
   color: white;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   a {
     color: inherit;
   }
@@ -61,7 +66,6 @@ body {
   align-items: stretch;
   justify-content: space-between;
   background: linear-gradient(180deg, #2a3267, #1e282f 100%);
-  background: transparent;
 }
 
 .hero-body {
@@ -75,22 +79,39 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  width: 100%;
+  width: 50em;
   margin: 0 auto;
+  background: orange;
+  border: 1px solid black;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.15) 2px 5px 5px 5px;
+  border-radius: 20px;
+  color: hsl(206, 17%, 28%);
+  margin-left: 10%;
+  margin-right: auto;
+  text-align: center;
+  align-content: center;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .column {
   display: flex;
   flex: 1 1 auto;
-  width: 50%;
+  width: 32%;
   height: 300px;
   margin-top: 40px;
+  text-align: center;
+  align-items: center;
   @media screen and (min-width: 980px) {
     width: 33.33333333333333%;
   }
@@ -101,12 +122,15 @@ body {
   flex-direction: column;
   padding: 10px;
   background-color: #fff;
-  height: 300px;
-  margin-left: 10%;
-  width: 90%;
+  height: 280px;
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
   will-change: transform;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 20px;
 }
 
 .card-title {
@@ -118,7 +142,7 @@ body {
 
 .card-body {
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 12px;
   @media screen and (min-width: 576px) {
     font-size: 18px;
   }
@@ -158,12 +182,13 @@ body {
   left: 0;
 }
 #learnmore {
-  background-color: teal;
+  background-color:  #096482;
   border-radius: 20px;
   border: 1px solid black;
   font-size: 12px;
   margin-left: 10px;
-  color: black;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   @media screen and (min-width: 576px) {
     margin-top: 20px;
   }
@@ -171,4 +196,20 @@ body {
 #share {
   margin-left: auto;
   margin-right: auto;
+}
+
+#particles {
+}
+.container {
+   color: #636363;
+   background: #efefef;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.15) 2px 5px 5px 5px;
+  border-radius: 20px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  width: 50em;
+  font-weight: 500;
+   font-family: 'Raleway', sans-serif;
+   margin-top: 60px;
 }

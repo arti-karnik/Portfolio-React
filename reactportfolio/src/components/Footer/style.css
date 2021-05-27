@@ -3,9 +3,11 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:  rgb(19, 17, 17);
+    background-color: black;
     color: white;
     font-size: 14px;
     text-align: center;
-    height: 50px;
+    height: 40px;
+    margin-top: auto;
+    overflow: hidden;
   }

@@ -57,7 +57,7 @@ const Nav = () => {
       </li>
        <li>
        <NavLink  className="navbar-item" activeClassName="is-active" to="/about" >
-            Aboutus
+            About
           </NavLink>
       </li>
      <li>

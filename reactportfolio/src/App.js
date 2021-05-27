@@ -6,28 +6,13 @@ import Contact from "./pages/Contact/contact";
 import Resume from "./pages/Resume/Resume";
 import Footer from "./components/Footer";
 import About from "./pages/About/About";
-import Projects from "./pages/PortfolioPage/myportfolio";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Portfolio from "./pages/PortfolioPage/portfolio";
 
 function App() {
   return (
-    /*<Router>
-      <Navbar />
-      <div className="main">
-        <Switch>
-          <Route exact path="/" exact component={Home}> 
-          </Route>
-          <Route exact path="/Portfolio-React" component={Home} >
-          </Route>
-        
-        </Switch>
-        <Footer />
-        <Footer/>
-      </div>
-    </Router>
-    */
     <BrowserRouter>
-      <Navbar />
+      <Navbar className="top"/>
       <div className="main"> 
         <Switch>
           <Route exact path="/">
@@ -40,7 +25,7 @@ function App() {
             <About />
           </Route>
           <Route path="/portfolio">
-            <Projects />
+            <Portfolio />
           </Route>
           <Route path="/contact">
             <Contact />
@@ -50,7 +35,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <Footer/>
+      <Footer className="bottom"/>
     </BrowserRouter>
   );
 }

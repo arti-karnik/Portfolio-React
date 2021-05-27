@@ -1,26 +1,24 @@
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
-
 #resume {
-    background: #fff;
-    overflow: hidden;
-    background: #efefef;
-    padding-top: 20px;
-    overflow: hidden;
-    width: 100%;
-    height: 200%;
     padding: 30px 40px;
-    margin-top: 20px;
-   border-width: 10px;
-  box-shadow: rgba(0, 0, 0, 0.15) 2px 5px 5px 5px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
-  width: 50em;
-  font-weight: 500;
-  font-family: 'Raleway', sans-serif;
-  margin-bottom: 5%;
- }
+    background: #efefef;
+   border: 1px solid black;
+   box-shadow: rgba(0, 0, 0, 0.15) 2px 5px 5px 5px;
+   border-radius: 20px;
+   color: hsl(206, 17%, 28%);
+   font-size: 18px;
+   width: 80%;
+   font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 60px;
+    overflow: hidden;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+   }
  
  #resume a, #resume a:visited  { color: #11ABB0; }
  #resume a:hover, #resume a:focus { color: #313131; }
@@ -29,12 +27,13 @@
     font: 18px/24px 'opensans-bold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
  }
  #resume h1 span {
     border-bottom: 3px solid #11ABB0;
     padding-bottom: 6px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: left;
  }
  #resume h3 {
     font: 25px/30px 'opensans-bold', sans-serif;
@@ -46,17 +45,17 @@
  }
  
  #resume .header-col { padding-top: 9px; }
- #resume .main-col { padding-right: 10%; }
+ #resume .main-col {  }
  
  .education, .work {
     margin-bottom: 48px;
-    padding-bottom: 24px;
     border-bottom: 1px solid #E8E8E8;
  }
  #resume .info {
     font: 16px/24px 'librebaskerville-italic', serif;
     color: #6E7881;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
+    margin-top: 0px;
  }
  #resume .info span {
     margin-right: 5px;
@@ -71,4 +70,20 @@
      color: dark gray;
      list-style-type: circle;
      font-family: Georgia, 'Times New Roman', Times, serif;
+     text-align: left;
+     margin-top: 0px;
  }
+ #download {
+   background-color:  #096482;
+   border-radius: 20px;
+   border: 1px solid black;
+   font-size: 12px;
+   margin-left: 10px;
+   color: white;
+   padding: 15px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   @media screen and (min-width: 576px) {
+     margin-top: 20px;
+   }
+ }
+ 

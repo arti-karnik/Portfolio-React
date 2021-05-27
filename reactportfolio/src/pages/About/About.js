@@ -25,16 +25,16 @@ export default class About extends Component {
 
                 </Row>
                 <Row>
-                <i class="fab fa-linkedin-in"></i>
-                
-                     <ul className="social">
+                <p>
+                <ul className="social">
+                        <li key="key1">
+                        <strong>Name:</strong> Arti Karnik
+                     </li>
                      <li key="key1">
                         <strong>Email:</strong> arti.karnik@gmail.com
-                        <a href="google.com" target="_blank"><i className="fa fa-mail"></i></a>
                      </li>
                      <li key="key2">
                         <strong>Address:</strong> El Segundo, CA
-                        <a href="google.com" target="_blank"><i className="fa fa-mail"></i></a>
                      </li>
                      <li key="key3">
                         <strong>Phone:</strong> 123-567-3332
@@ -46,11 +46,13 @@ export default class About extends Component {
                      <li key="key5">
                      </li>
                      <li key="key-social" className="social">
-                        <a href="google.com" target="_blank" ><i className="fa fa-linkedin fa-lg circle-icon"></i></a>
-                        <a href="google.com" target="_blank"><i className="fa fa-twitter fa-lg circle-icon"></i></a>
-                        <a href="google.com" target="_blank"><i className="fa fa-github fa-lg circle-icon"></i></a>
+                        <a href="https://www.linkedin.com/in/arti-karnik-15844b201/" target="_blank" ><i className="fa fa-linkedin fa-lg circle-icon"></i></a>
+                        <a href="https://github.com/arti-karnik" target="_blank"><i className="fa fa-github fa-lg circle-icon"></i></a>
                      </li>
                      </ul>
+                  </p>
+               
+                    
                 </Row>
 
               

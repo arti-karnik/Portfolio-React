@@ -3,7 +3,9 @@ header {
     height: 800px;
     min-height: 500px;
     width: 100%;
-    background: #161415 url(../../images/header-background.jpeg) no-repeat top center;
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../../images/header-background.jpeg");
+
+    background: #161415 url(../../images/header-background1.jpeg) no-repeat top center;
     background-size: cover !important;
      -webkit-background-size: cover !important;
     text-align: center;

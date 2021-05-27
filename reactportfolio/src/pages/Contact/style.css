@@ -3,25 +3,26 @@
 /* ------------------------------------------------------------------ */
 
 #contact {
-    background: #191919;
-    padding-top: 10px;
-    padding-bottom: 102px;
-    color: #636363;
-    background: #efefef;
-    padding-top: 20px;
-    overflow: hidden;
-    width: 100%;
-    padding: 30px 40px;
-   
-   border-width: 10px;
+   background: #191919;
+   padding-top: 10px;
+   padding-bottom: 102px;
+   color: #636363;
+   background: #efefef;
+   width: 100%;
+   padding: 30px 40px;
+  border: 1px solid black;
   box-shadow: rgba(0, 0, 0, 0.15) 2px 5px 5px 5px;
+  border-radius: 20px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   width: 50em;
   font-weight: 500;
-  font-family: 'Raleway', sans-serif;
-  margin-bottom: 5%;
-  margin-top: 80px;
+   font-family: 'Raleway', sans-serif;
+   margin-top: 60px;
+   height: 90%;
+   margin-left: auto;
+   margin-right: auto;
+
  }
  #contact .section-head { margin-bottom: 42px; }
  
@@ -117,4 +118,16 @@
      margin-bottom: 10px;
     width: 65%;
     margin-left: 26%;
+ }
+ #submit {
+   background-color:  #096482;
+   border-radius: 20px;
+   border: 1px solid black;
+   font-size: 12px;
+   margin-left: 10px;
+   color: white;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   @media screen and (min-width: 576px) {
+     margin-top: 20px;
+   }
  }
