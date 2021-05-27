@@ -1,7 +1,3 @@
-/* ------------------------------------------------------------------ */
-/* h. Contact Section
-/* ------------------------------------------------------------------ */
-
 #contact-form {
    color: #636363;
    background: #efefef;
@@ -62,10 +58,7 @@
  #contact-form .input-form {
       background-color: white;
  }
- 
- 
- /* contact form */
- #contact form { margin-bottom: 20px; }
+  #contact form { margin-bottom: 20px; }
  #contact label {
     font: 15px/24px 'opensans-bold', sans-serif;
     margin: 12px 0;
@@ -75,28 +68,7 @@
     
  }
 
- /*#contact input,
- #contact textarea,
- #contact select {
-    padding: 18px 10px;
-     color: #eee;
-     background: #373233;
-     margin-bottom: 20px;
-     border: 0;
-     outline: none;
-    font-size: 15px;
-      line-height: 24px;
-    width: 65%;
- }
- #contact input:focus,
- #contact textarea:focus,
- #contact select:focus {
-     color: black;
-     background-color: #11ABB0;
- }*/
- 
  #submit {
-  
       background-color:  #096482;
       border-radius: 20px;
       border: 1px solid black;
@@ -108,5 +80,4 @@
       @media screen and (min-width: 576px) {
         margin-top: 20px;
       }
-
  }

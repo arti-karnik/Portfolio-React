@@ -3,11 +3,7 @@ import ContactForm from '../../components/contactform/contactform';
 import "./style.css";
 import { Container, Row, Col } from 'react-bootstrap';
 import Particles from '../../components/Particles/Particles';
-
-
 export default class contact extends Component {
-  
-
   render() {
     return (
       <Particles>
@@ -25,7 +21,8 @@ export default class contact extends Component {
         <textarea className="form-control" rows="5"></textarea>
     </div>
     <button type="submit" id="submit">Submit</button>
-</form>    </Particles>
-        );
+</form>    
+</Particles>
+    );
   }
 }
