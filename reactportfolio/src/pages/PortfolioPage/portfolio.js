@@ -167,6 +167,15 @@ const images_Blog = [
 
 var projects = [
   {
+        title: "Google Books Search",
+        description: " a new React-based Google Books Search app. This assignment requires you to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. You'll also use Node, Express and MongoDB so that users can save books to review or purchase later",
+        github: "https://github.com/arti-karnik/GoogleBooks",
+        url: "https://github.com/arti-karnik/GoogleBooks",
+        image: "/images/icons/google-books.png",
+        imageRatio: 784 / 1016,
+
+    },
+  {
     title: "Event Maker",
     description: "This application allows a host to schedule an event online , in-person or an announcement for a few different types of events.",
     github: "https://github.com/arti-karnik/EventMaker",
@@ -200,15 +209,6 @@ var projects = [
       imageRatio: 784 / 1016,
 
   },
-    {
-        title: "Weather!",
-        description: "Application to get current and 5-day weather forecast for given city name. Current & forecasted temperature details displayed.",
-        github: "https://github.com/arti-karnik/WhatsMyWeather",
-        url: "https://arti-karnik.github.io/WhatsMyWeather/",
-        image: "/images/icons/weather-icon.png",
-        imageRatio: 784 / 1016,
-
-    },
     {
       title: "Employee Viewer",
       description: "An employee or manager would benefit greatly from being able to view data about other employees.",
