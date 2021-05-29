@@ -168,10 +168,10 @@ const images_Blog = [
 var projects = [
   {
         title: "Google Books Search",
-        description: " a new React-based Google Books Search app. This assignment requires you to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. You'll also use Node, Express and MongoDB so that users can save books to review or purchase later",
+        description: "A new React-based Google Books Search app. Utilize React lifecycle methods to query and display books based on user searches.",
         github: "https://github.com/arti-karnik/GoogleBooks",
-        url: "https://github.com/arti-karnik/GoogleBooks",
-        image: "/images/icons/google-books.png",
+        url: "https://whispering-everglades-55641.herokuapp.com/",
+        image: "/images/icons/googlebooks.png",
         imageRatio: 784 / 1016,
 
     },
