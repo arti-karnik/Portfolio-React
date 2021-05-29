@@ -52,7 +52,7 @@ https://github.com/arti-karnik
 https://arti-karnik.github.io/Portfolio-React/
 
 ## Codebase
-https://github.com/arti-karnik/Technology-StopAndBlog
+https://github.com/arti-karnik/Portfolio-React
 
 
 ## Application Walk-through
